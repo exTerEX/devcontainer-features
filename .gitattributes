@@ -1,0 +1,3 @@
+*.json  text linguist-detectable
+*.yaml  text linguist-detectable
+*.yml   text linguist-detectable
