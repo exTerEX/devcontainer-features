@@ -14,7 +14,7 @@ Installs the provided version of CMake in devcontainer image. CMake is installed
 
 | Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select a Python version to install. | string | latest |
+| version | Select a CMake version to install. | string | latest |
 
 ## Customizations
 
