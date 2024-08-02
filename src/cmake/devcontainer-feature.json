@@ -15,5 +15,14 @@
             "default": "latest"
         }
     },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cmake-tools",
+                "twxs.cmake"
+            ]
+        },
+        "settings": {}
+    },
     "installsAfter": []
 }
