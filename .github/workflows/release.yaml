@@ -1,6 +1,19 @@
 name: "Release dev container features"
 on:
   workflow_dispatch:
+    inputs:
+      features:
+        description: "List of features to execute tests against"
+        required: true
+        default: "cmake ninja-build"
+      baseImage:
+        description: "Base image"
+        required: true
+        default: "ubuntu:focal"
+      logLevel:
+        description: "Log Level (info/debug/trace)"
+        required: true
+        default: "info"
   push:
     branches:
       - main
