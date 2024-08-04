@@ -1,7 +1,7 @@
 {
     "name": "CMake",
     "id": "cmake",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Add CMake to image",
     "options": {
         "version": {
