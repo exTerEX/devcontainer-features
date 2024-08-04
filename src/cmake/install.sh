@@ -9,6 +9,12 @@ echo "Activating feature 'CMake'"
 
 VERSION="${VERSION:-latest}"
 
+# Install curl if not in system
+if ! which curl > /dev/null; then
+    CURLINSTALLED="true"
+    apt update && apt -y install --no-install-recommends curl ca-certificates
+fi
+
 # Fetch the latest release
 if [ ${VERSION} = "latest" ]; then
     VERSION=$(curl --silent -I https://github.com/Kitware/CMake/releases/latest | awk -F '/' '/^location/ {print  substr($NF, 1, length($NF)-1)}')
@@ -43,9 +49,14 @@ rm man/man1/cmake-gui.1
 rm -rf share/applications
 
 # Install CMake
-sudo mv -v bin/* /usr/local/bin
-sudo mkdir /usr/local/share/man/cmake && sudo mv -v man/* /usr/local/share/man/cmake
-sudo mv -v share/* /usr/local/share/
+mv -v bin/* /usr/local/bin
+mkdir /usr/local/share/man/cmake && sudo mv -v man/* /usr/local/share/man/cmake
+mv -v share/* /usr/local/share/
+
+# Remove curl and dependencies if installed by script
+if [ ! -Z ${CURLINSTALLED+x} ]; then
+    apt remove -y curl ca-certificates && apt autoremove -y
+fi
 
 # Remove temporary files
 cd /tmp && rm -rf ${SOURCEDIR}-${ARCHITECTURE}
