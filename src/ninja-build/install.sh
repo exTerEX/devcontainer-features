@@ -41,7 +41,7 @@ fi
 # Unzip binaries
 unzip ${SOURCE} && rm ${SOURCE}
 
-# Install CMake
+# Install ninja-build
 mv -v ninja /usr/local/bin
 
 # Remove curl and dependencies if installed by script
