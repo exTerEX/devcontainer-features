@@ -27,10 +27,10 @@ ARCHITECTURE=linux-$(uname -m)
 # TODO: Check if architecture is supported
 
 # Fetch binaries
-wget -O ${SOURCE} - https://github.com/Kitware/CMake/releases/download/v${VERSION#v}/${SOURCEDIR}-${ARCHITECTURE}.tar.gz
+curl -JLo ${SOURCE} https://github.com/Kitware/CMake/releases/download/v${VERSION#v}/${SOURCEDIR}-${ARCHITECTURE}.tar.gz
 
 # Fetch public PGP signature
-wget -O ${SOURCE}-SHA-256.asc - https://github.com/Kitware/CMake/releases/download/v${VERSION#v}/${SOURCEDIR}-SHA-256.txt.asc
+curl -JLo ${SOURCE}-SHA-256.asc https://github.com/Kitware/CMake/releases/download/v${VERSION#v}/${SOURCEDIR}-SHA-256.txt.asc
 
 # TODO: Add signature check
 

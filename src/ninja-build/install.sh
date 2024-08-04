@@ -24,7 +24,7 @@ cd /tmp
 SOURCEDIR=ninja-linux.zip # ninja-linux-aarch64.zip if ARM64
 
 # Fetch binaries
-wget -O ${SOURCE} - https://github.com/ninja-build/ninja/releases/download/v${VERSION#v}/ninja-linux.zip
+curl -JLo ${SOURCE} https://github.com/ninja-build/ninja/releases/download/v${VERSION#v}/ninja-linux.zip
 
 # Unzip binaries
 unzip ${SOURCE} && rm ${SOURCE}
