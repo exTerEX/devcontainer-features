@@ -1,0 +1,30 @@
+name: "CI - Shell Script Linter"
+on:
+  workflow_dispatch:
+    inputs:
+      path:
+        description: "Path to the shell scripts to lint"
+        required: true
+        default: "src/**/*.sh"
+      severity:
+        description: "Minimum Severity (style, info, warning, error)"
+        required: true
+        default: "style"
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  shellchecker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Shell Linter
+      uses: azohra/shell-linter@v0.6.0
+      with:
+        path: "src/**/*.sh"
+        severity: "error"
+      env:
+        SHELLCHECK_OPTS: -e SC2072
