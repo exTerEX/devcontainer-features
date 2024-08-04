@@ -3,6 +3,13 @@
     "customizations": {
         "vscode": {
             "settings": {
+                "[jsonc]": {
+                    "editor.quickSuggestions": {
+                        "strings": true
+                    },
+                    "editor.suggest.insertMode": "replace",
+                    "editor.tabSize": 2
+                },
                 "json.schemas": [
                     {
                         "fileMatch": [
