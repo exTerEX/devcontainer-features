@@ -7,6 +7,13 @@ fi
 
 echo "Activating feature 'datasets-cli'"
 
+
+# Install curl if not in system
+if ! which curl > /dev/null; then
+    CURLINSTALLED="true"
+    apt update && apt -y install --no-install-recommends curl ca-certificates
+fi
+
 # Move into temporary files directory
 cd /tmp
 
@@ -16,3 +23,8 @@ curl -JLO https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/v2/linux-amd64/
 # Install datasets-cli
 mv -v datasets /usr/local/bin
 chmod +x /usr/local/bin/datasets
+
+# Remove curl and dependencies if installed by script
+if [ ! -Z ${CURLINSTALLED+x} ]; then
+    apt remove -y curl ca-certificates && apt autoremove -y
+fi
