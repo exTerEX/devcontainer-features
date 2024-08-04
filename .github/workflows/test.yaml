@@ -14,6 +14,7 @@ jobs:
       matrix:
         features:
           - cmake
+          - ninja-build
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -35,6 +36,7 @@ jobs:
       matrix:
         features:
           - cmake
+          - ninja-build
     steps:
       - uses: actions/checkout@v3
 
