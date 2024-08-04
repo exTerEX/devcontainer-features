@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # Run tests for ninja-build using this command
 # #> devcontainer features test --features ninja-build --base-image mcr.microsoft.com/devcontainers/base:debian

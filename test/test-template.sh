@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # This test file will be executed against an auto-generated devcontainer.json that
 # includes the 'CMake' Feature with no options.

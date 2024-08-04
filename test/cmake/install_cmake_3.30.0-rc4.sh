@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # Run tests for cmake using this command
 # #> devcontainer features test --features cmake --base-image mcr.microsoft.com/devcontainers/base:debian
