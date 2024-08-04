@@ -1,0 +1,14 @@
+{
+    "name": "NCBI datasets CLI",
+    "id": "datasets-cli",
+    "version": "0.0.1",
+    "description": "Add NCBI datasets CLI to image",
+    "options": {},
+    "customizations": {
+        "vscode": {
+            "extensions": []
+        },
+        "settings": {}
+    },
+    "installsAfter": []
+}
