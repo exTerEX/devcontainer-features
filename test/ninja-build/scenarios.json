@@ -1,0 +1,10 @@
+{
+    "install_ninja_1.10.1": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "ninja-build": {
+                "version": "1.10.1"
+            }
+        }
+    }
+}
