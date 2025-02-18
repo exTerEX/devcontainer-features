@@ -1,0 +1,16 @@
+{
+    "name": "CMake language formatter",
+    "id": "cmake-format",
+    "version": "0.0.1",
+    "description": "Add CMake language formatter to image",
+    "options": {},
+    "customizations": {
+        "vscode": {
+            "extensions": []
+        },
+        "settings": {}
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/python"
+    ]
+}
