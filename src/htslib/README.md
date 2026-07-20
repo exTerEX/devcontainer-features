@@ -1,6 +1,6 @@
-# SAMtools (samtools)
+# HTSlib (htslib)
 
-Feature compiles and installs the official suite of SAMtools utilities into your devcontainer environment for manipulating high-throughput biological sequencing data.
+Feature compiles and installs HTSlib C library and utilities (`bgzip`, `tabix`, `htsfile`) into your devcontainer environment for accessing high-throughput biological sequencing data formats.
 
 ## Supported Architectures & Distributions
 
@@ -11,13 +11,14 @@ Feature compiles and installs the official suite of SAMtools utilities into your
 
 ```json
 "features": {
-    "ghcr.io/exterex/features/samtools:1": {
+    "ghcr.io/exterex/features/htslib:1": {
         "version": "latest"
     }
 }
+```
 
 ## Options
 
 | Option ID | Description | Type | Default | Proposals |
 |-----------|-------------|------|---------|-----------|
-| `version` | Select a specific SAMtools version to compile and install. | `string` | `latest` | `latest`, `1.24`, `1.23.2`, `1.22` |
+| `version` | Select a specific HTSlib version to compile and install. | `string` | `latest` | `latest`, `1.24`, `1.23.2`, `1.22` |

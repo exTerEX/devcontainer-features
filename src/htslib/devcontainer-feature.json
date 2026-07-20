@@ -1,12 +1,12 @@
 {
-    "name": "SAMtools",
-    "id": "samtools",
+    "name": "HTSlib",
+    "id": "htslib",
     "version": "1.0.0",
-    "description": "Installs SAMtools utilities for manipulating high-throughput biological sequencing data formats (SAM/BAM/CRAM).",
+    "description": "Installs HTSlib C library and utilities (bgzip, tabix, htsfile) for accessing high-throughput sequencing data formats.",
     "options": {
         "version": {
             "type": "string",
-            "description": "Select a specific SAMtools version to compile and install.",
+            "description": "Select a specific HTSlib version to compile and install.",
             "proposals": [
                 "latest",
                 "1.24",

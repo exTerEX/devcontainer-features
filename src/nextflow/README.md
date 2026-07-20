@@ -11,5 +11,11 @@ Installs Nextflow into your devcontainer environment to allow rapid and robust c
 
 ```json
 "features": {
-    "ghcr.io/robsyme/features/nextflow:1": {}
+    "ghcr.io/exterex/features/nextflow:1": {}
 }
+
+## Options
+
+| Option ID | Description | Type | Default | Proposals |
+|-----------|-------------|------|---------|-----------|
+| `version` | Select a specific Nextflow version to compile and install. | `string` | `latest` | `latest`, `24.04.4` |

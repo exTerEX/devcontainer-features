@@ -6,7 +6,7 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-echo "Activating feature 'SAMtools'"
+echo "Activating feature 'HTSlib'"
 
 VERSION="${VERSION:-latest}"
 
@@ -25,8 +25,8 @@ else
     PACKAGE_MANAGER="unknown"
 fi
 
-# 2. Install permanent runtime libraries to support SAMtools execution
-echo "Installing SAMtools shared runtime dependencies..."
+# 2. Install permanent runtime libraries to support HTSlib execution
+echo "Installing HTSlib shared runtime dependencies..."
 case "${PACKAGE_MANAGER}" in
     apt)
         apt-get update && apt-get install -y --no-install-recommends \
@@ -99,14 +99,14 @@ esac
 # Move into temporary directory
 cd /tmp
 
-# 4. Resolve latest version and URLs if requested
+# 4. Resolve latest version and URLs if requested (Points to the htslib repository)
 if [ "${VERSION}" = "latest" ]; then
-    VERSION=$(curl -sIL -o /dev/null -w '%{url_effective}' "https://github.com/samtools/samtools/releases/latest" | grep -oE "[^/]+$")
+    VERSION=$(curl -sIL -o /dev/null -w '%{url_effective}' "https://github.com/samtools/htslib/releases/latest" | grep -oE "[^/]+$")
 fi
 
-echo "Downloading SAMtools version ${VERSION}..."
-URL="https://github.com/samtools/samtools/releases/download/${VERSION}/samtools-${VERSION}.tar.bz2"
-SOURCE="samtools-${VERSION}"
+echo "Downloading HTSlib version ${VERSION}..."
+URL="https://github.com/samtools/htslib/releases/download/${VERSION}/htslib-${VERSION}.tar.bz2"
+SOURCE="htslib-${VERSION}"
 TARBALL="${SOURCE}.tar.bz2"
 
 curl -sSLf -o "${TARBALL}" "${URL}"
@@ -116,7 +116,7 @@ tar -xjf "${TARBALL}"
 cd "${SOURCE}"
 
 # 5. Compile and deploy
-echo "Configuring and compiling SAMtools natively..."
+echo "Configuring and compiling HTSlib natively..."
 ./configure --prefix=/usr/local
 make
 echo "Deploying binaries to /usr/local/bin..."
@@ -155,4 +155,4 @@ if [ "${PACKAGE_MANAGER}" = "apt" ]; then
     apt-get autoremove -y && apt-get clean
 fi
 
-echo "SAMtools installation completed successfully!"
+echo "HTSlib installation completed successfully!"

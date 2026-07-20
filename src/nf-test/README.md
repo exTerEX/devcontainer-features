@@ -11,5 +11,11 @@ A feature to install the nf-test framework to allow quick and isolated pipeline 
 
 ```json
 "features": {
-    "ghcr.io/your-namespace/features/nf-test:1": {}
+    "ghcr.io/exterex/features/nf-test:1": {}
 }
+
+## Options
+
+| Option ID | Description | Type | Default | Proposals |
+|-----------|-------------|------|---------|-----------|
+| `version` | Select a specific nf-test version to compile and install. | `string` | `latest` | `latest`, `0.9.3`, `0.9.2` |

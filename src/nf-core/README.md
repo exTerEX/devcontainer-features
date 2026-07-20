@@ -11,5 +11,11 @@ Installs the official nf-core tools CLI into your devcontainer. This provides a 
 
 ```json
 "features": {
-    "ghcr.io/your-namespace/features/nf-core:1": {}
+    "ghcr.io/exterex/features/nf-core:1": {}
 }
+
+## Options
+
+| Option ID | Description | Type | Default | Proposals |
+|-----------|-------------|------|---------|-----------|
+| `version` | Select a specific nf-core version to compile and install. | `string` | `latest` | `latest`, `2.14.1`, `2.13.1` |

@@ -11,7 +11,13 @@ Feature installs the standalone suite of BLAST+ command-line tools into your dev
 
 ```json
 "features": {
-    "ghcr.io/exterex/devcontainer-features/blast:1": {
+    "ghcr.io/exterex/features/blast:1": {
         "version": "latest"
     }
 }
+
+## Options
+
+| Option ID | Description | Type | Default | Proposals |
+|-----------|-------------|------|---------|-----------|
+| `version` | Select a specific BLAST+ version to compile and install. | `string` | `latest` | `latest`, `2.14.1`, `2.15.0`, `2.16.0` |

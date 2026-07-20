@@ -1,0 +1,34 @@
+{
+    "install_pinned_version": {
+        "image": "debian:latest",
+        "features": {
+            "bcftools": {
+                "version": "1.24"
+            }
+        }
+    },
+    "test_fedora": {
+        "image": "fedora:latest",
+        "features": {
+            "bcftools": {
+                "version": "latest"
+            }
+        }
+    },
+    "test_opensuse": {
+        "image": "registry.opensuse.org/opensuse/leap:latest",
+        "features": {
+            "bcftools": {
+                "version": "latest"
+            }
+        }
+    },
+    "test_archlinux": {
+        "image": "archlinux:latest",
+        "features": {
+            "bcftools": {
+                "version": "latest"
+            }
+        }
+    }
+}

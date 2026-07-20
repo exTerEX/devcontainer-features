@@ -11,5 +11,5 @@ Installs the official NCBI Dataformat CLI utility into your devcontainer images.
 
 ```json
 "features": {
-    "ghcr.io/exterex/devcontainer-features/dataformat-cli:1": {}
+    "ghcr.io/exterex/features/dataformat-cli:1": {}
 }
