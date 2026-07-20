@@ -1,0 +1,21 @@
+{
+    "name": "SAMtools",
+    "id": "samtools",
+    "version": "1.0.0",
+    "description": "Installs SAMtools, BCFtools, and HTSlib utilities for manipulating high-throughput sequencing data formats.",
+    "options": {
+        "version": {
+            "type": "string",
+            "description": "Select a specific SAMtools version to compile and install.",
+            "proposals": [
+                "latest",
+                "1.24",
+                "1.23.2",
+                "1.22"
+            ],
+            "default": "latest"
+        }
+    },
+    "customizations": {},
+    "installsAfter": []
+}
