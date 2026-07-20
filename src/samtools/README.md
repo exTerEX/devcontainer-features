@@ -15,6 +15,7 @@ Feature compiles and installs the official suite of SAMtools utilities into your
         "version": "latest"
     }
 }
+```
 
 ## Options
 

@@ -15,6 +15,7 @@ Feature installs the standalone suite of BLAST+ command-line tools into your dev
         "version": "latest"
     }
 }
+```
 
 ## Options
 

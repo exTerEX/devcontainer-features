@@ -13,6 +13,7 @@ A feature to install the nf-test framework to allow quick and isolated pipeline 
 "features": {
     "ghcr.io/exterex/features/nf-test:1": {}
 }
+```
 
 ## Options
 

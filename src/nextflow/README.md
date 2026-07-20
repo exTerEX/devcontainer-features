@@ -13,6 +13,7 @@ Installs Nextflow into your devcontainer environment to allow rapid and robust c
 "features": {
     "ghcr.io/exterex/features/nextflow:1": {}
 }
+```
 
 ## Options
 

@@ -13,6 +13,7 @@ Installs the official nf-core tools CLI into your devcontainer. This provides a 
 "features": {
     "ghcr.io/exterex/features/nf-core:1": {}
 }
+```
 
 ## Options
 
