@@ -1,0 +1,38 @@
+# --- AI & Automation Tools ---
+graphify-out/
+.github/hooks/rtk-rewrite.json
+
+# --- IDEs & Editors ---
+# VS Code local configurations (keep shared files, ignore local workspace state)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+*.code-workspace
+
+# JetBrains IDEs (IntelliJ, WebStorm, GoLand, RustRover, etc.)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# --- Container & Docker Build Artifacts ---
+.dockerignore
+*build.log
+docker-compose.override.yml
+
+# --- System & OS Junk ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Log.txt
+*.bak
+*.tmp
+
+# --- Environment Secrets & Local Overrides ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
