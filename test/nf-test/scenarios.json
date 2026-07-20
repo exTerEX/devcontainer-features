@@ -2,33 +2,27 @@
     "install_pinned_version": {
         "image": "debian:latest",
         "features": {
-            "blast": {
-                "version": "2.16.0"
+            "nf-test": {
+                "version": "0.9.2"
             }
         }
     },
     "test_fedora": {
         "image": "fedora:latest",
         "features": {
-            "blast": {
-                "version": "latest"
-            }
+            "nf-test": {}
         }
     },
     "test_opensuse": {
         "image": "registry.opensuse.org/opensuse/leap:latest",
         "features": {
-            "blast": {
-                "version": "latest"
-            }
+            "nf-test": {}
         }
     },
     "test_archlinux": {
         "image": "archlinux:latest",
         "features": {
-            "blast": {
-                "version": "latest"
-            }
+            "nf-test": {}
         }
     }
 }

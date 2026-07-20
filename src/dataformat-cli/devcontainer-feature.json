@@ -1,14 +1,9 @@
 {
-    "name": "NCBI dataformat CLI",
+    "name": "NCBI Dataformat CLI",
     "id": "dataformat-cli",
-    "version": "0.0.1",
-    "description": "Add NCBI dataformat CLI to image",
+    "version": "1.0.0",
+    "description": "Installs the NCBI Dataformat CLI tool to convert JSON-Lines metadata from NCBI Datasets into clean tabular formats (TSV, Excel).",
     "options": {},
-    "customizations": {
-        "vscode": {
-            "extensions": []
-        },
-        "settings": {}
-    },
+    "customizations": {},
     "installsAfter": []
 }

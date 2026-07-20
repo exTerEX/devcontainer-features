@@ -1,16 +1,12 @@
-#!/bin/bash
-
-# Run tests for dataformat-cli using this command
-# #> devcontainer features test --features dataformat-cli --base-image mcr.microsoft.com/devcontainers/base:debian
-
+#!/usr/bin/env bash
 set -e
 
 # Provides the 'check' and 'reportResults' commands.
 source dev-container-features-test-lib
 
-# Check paths in settings
-check "which NCBI dataformat" bash -c "which dataformat | grep /usr/local/bin/dataformat"
+# Assert binary presence and verify baseline executable behavior
+check "NCBI dataformat is in path" command -v dataformat
+check "NCBI dataformat execution check" dataformat version
 
 # Report result
-# If any of the checks above exited with a non-zero exit code, the test will fail.
 reportResults

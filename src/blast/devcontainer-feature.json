@@ -1,24 +1,21 @@
 {
     "name": "BLAST+",
     "id": "blast",
-    "version": "0.0.1",
-    "description": "Add BLAST+ to image",
+    "version": "1.0.0",
+    "description": "Installs the NCBI BLAST+ suite of command-line applications for sequence alignment.",
     "options": {
         "version": {
             "type": "string",
-            "description": "Provide the semver",
+            "description": "Select a specific BLAST+ version to install.",
             "proposals": [
-                "2.9.0",
-                "2.8.1"
+                "latest",
+                "2.16.0",
+                "2.15.0",
+                "2.14.1"
             ],
             "default": "latest"
         }
     },
-    "customizations": {
-        "vscode": {
-            "extensions": []
-        },
-        "settings": {}
-    },
+    "customizations": {},
     "installsAfter": []
 }

@@ -1,13 +1,15 @@
 # NCBI Datasets CLI (datasets-cli)
 
-Installs the NCBI Datasets CLI in devcontainer image.
+Installs the official NCBI Datasets CLI utility into your devcontainer images. This tool allows users to seamlessly stream data packages, download biological sequence files, assemblies, and record schemas directly from NCBI repositories.
 
-**Note**: For now, this feature will only support debian-based systems and x86_64-based images.
+## Supported Environments
 
-## Example usage
+- **Architectures**: `x86_64` (amd64), `aarch64` (arm64)
+- **Linux Distributions**: Debian, Ubuntu, Fedora, RedHat, openSUSE, and Arch Linux
+
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/exterex/devcontainer-features/datasets-cli": {}
+    "ghcr.io/exterex/devcontainer-features/datasets-cli:1": {}
 }
-```

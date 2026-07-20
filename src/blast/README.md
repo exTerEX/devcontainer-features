@@ -1,19 +1,17 @@
 # NCBI BLAST+ (blast)
 
-Installs the provided version of BLAST+ in devcontainer image.
+Feature installs the standalone suite of BLAST+ command-line tools into your devcontainer environment.
 
-**Note**: For now, this feature will only support debian-based systems and x86_64-based images. *version* only support pure *.*.*, not *.*.*alpha or anything else.
+## Supported Architectures & Distributions
 
-## Example usage
+* **Architectures:** `x86_64` (x64), `aarch64` (ARM64)
+* **Linux Distributions:** Debian, Ubuntu, Fedora, RHEL, OpenSUSE, and Arch Linux
+
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/exterex/devcontainer-features/blast": {}
+    "ghcr.io/exterex/devcontainer-features/blast:1": {
+        "version": "latest"
+    }
 }
-```
-
-## Options
-
-| Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
-| version | Select a Blast+ version to install. | string | latest |

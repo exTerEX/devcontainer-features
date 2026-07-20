@@ -2,33 +2,27 @@
     "install_pinned_version": {
         "image": "debian:latest",
         "features": {
-            "blast": {
-                "version": "2.16.0"
+            "nextflow": {
+                "version": "24.04.4"
             }
         }
     },
     "test_fedora": {
         "image": "fedora:latest",
         "features": {
-            "blast": {
-                "version": "latest"
-            }
+            "nextflow": {}
         }
     },
     "test_opensuse": {
         "image": "registry.opensuse.org/opensuse/leap:latest",
         "features": {
-            "blast": {
-                "version": "latest"
-            }
+            "nextflow": {}
         }
     },
     "test_archlinux": {
         "image": "archlinux:latest",
         "features": {
-            "blast": {
-                "version": "latest"
-            }
+            "nextflow": {}
         }
     }
 }

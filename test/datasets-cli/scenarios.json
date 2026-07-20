@@ -1,34 +1,26 @@
 {
-    "install_pinned_version": {
+    "test_debian": {
         "image": "debian:latest",
         "features": {
-            "blast": {
-                "version": "2.16.0"
-            }
+            "datasets-cli": {}
         }
     },
     "test_fedora": {
         "image": "fedora:latest",
         "features": {
-            "blast": {
-                "version": "latest"
-            }
+            "datasets-cli": {}
         }
     },
     "test_opensuse": {
         "image": "registry.opensuse.org/opensuse/leap:latest",
         "features": {
-            "blast": {
-                "version": "latest"
-            }
+            "datasets-cli": {}
         }
     },
     "test_archlinux": {
         "image": "archlinux:latest",
         "features": {
-            "blast": {
-                "version": "latest"
-            }
+            "datasets-cli": {}
         }
     }
 }

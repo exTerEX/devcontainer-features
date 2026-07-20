@@ -1,14 +1,9 @@
 {
-    "name": "NCBI datasets CLI",
+    "name": "NCBI Datasets CLI",
     "id": "datasets-cli",
-    "version": "0.0.1",
-    "description": "Add NCBI datasets CLI to image",
+    "version": "1.0.0",
+    "description": "Installs the NCBI Datasets CLI tool to download biological sequence data and metadata from NCBI.",
     "options": {},
-    "customizations": {
-        "vscode": {
-            "extensions": []
-        },
-        "settings": {}
-    },
+    "customizations": {},
     "installsAfter": []
 }

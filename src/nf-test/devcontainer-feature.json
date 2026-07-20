@@ -1,0 +1,17 @@
+{
+    "name": "nf-test",
+    "id": "nf-test",
+    "version": "1.1.0",
+    "description": "Simple test framework for Nextflow pipelines.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": ["latest", "0.9.3", "0.9.2"],
+            "default": "latest",
+            "description": "Select the nf-test version to install (e.g., 0.9.3)."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/java"
+    ]
+}
