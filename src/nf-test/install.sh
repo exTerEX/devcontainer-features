@@ -50,7 +50,7 @@ case "${PACKAGE_MANAGER}" in
     apt)
         apt-get update
         apt-get install -y --no-install-recommends curl ca-certificates zip unzip sed
-        
+
         # Handle the historical 'which' vs 'debianutils' package split safely
         if ! command -v which >/dev/null 2>&1; then
             if apt-get install -y --no-install-recommends which 2>/dev/null; then
@@ -60,7 +60,7 @@ case "${PACKAGE_MANAGER}" in
                 apt-get install -y --no-install-recommends debianutils
             fi
         fi
-        
+
         if apt-get install -y --no-install-recommends openjdk-21-jre-headless 2>/dev/null; then
             echo "Successfully deployed OpenJDK 21"
         elif apt-get install -y --no-install-recommends openjdk-17-jre-headless 2>/dev/null; then
@@ -72,7 +72,7 @@ case "${PACKAGE_MANAGER}" in
         ;;
     dnf|yum)
         ${PACKAGE_MANAGER} install -y curl ca-certificates zip unzip sed which
-        
+
         if ${PACKAGE_MANAGER} install -y java-21-openjdk-headless 2>/dev/null; then
             echo "Successfully deployed OpenJDK 21"
         elif ${PACKAGE_MANAGER} install -y java-17-openjdk-headless 2>/dev/null; then
@@ -87,7 +87,7 @@ case "${PACKAGE_MANAGER}" in
     zypper)
         zypper refresh
         zypper install -y curl ca-certificates zip unzip sed which
-        
+
         if zypper install -y java-21-openjdk 2>/dev/null; then
             echo "Successfully deployed OpenJDK 21"
         elif zypper install -y java-17-openjdk 2>/dev/null; then

@@ -25,7 +25,7 @@ else
     PACKAGE_MANAGER="unknown"
 fi
 
-# 2. Install permanent runtime libraries
+# 2. Install permanent runtime libraries to support SAMtools execution
 echo "Installing SAMtools shared runtime dependencies..."
 case "${PACKAGE_MANAGER}" in
     apt)

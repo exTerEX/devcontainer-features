@@ -13,6 +13,6 @@
     },
     "customizations": {},
     "installsAfter": [
-        "ghcr.io/exterex/devcontainer-features/nextflow"
+        "ghcr.io/exterex/features/nextflow"
     ]
 }
