@@ -1,0 +1,18 @@
+{
+    "name": "nf-core tools",
+    "id": "nf-core",
+    "version": "1.0.0",
+    "description": "Installs the nf-core tools CLI for creating, linting, and managing Nextflow pipelines.",
+    "options": {
+        "toolVersion": {
+            "type": "string",
+            "proposals": ["latest", "2.14.1", "2.13.1"],
+            "default": "latest",
+            "description": "Select the nf-core version to install (e.g., 2.14.1)."
+        }
+    },
+    "customizations": {},
+    "installsAfter": [
+        "ghcr.io/exterex/devcontainer-features/nextflow"
+    ]
+}

@@ -1,0 +1,30 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Devcontainer configuration files (JSON with comments / standard JSON)
+[{devcontainer.json,.devcontainer/**/*.json,*.json}]
+indent_style = space
+indent_size = 2
+
+# Configuration files (YAML/YML for Docker Bake, GitHub Actions, Compose)
+[{*.yaml,*.yml}]
+indent_style = space
+indent_size = 2
+
+# Shell scripts (Crucial to enforce LF line endings to avoid container syntax errors)
+[{*.sh,*.bash}]
+end_of_line = lf
+indent_style = space
+indent_size = 2
+
+# Markdown files (Allow trailing whitespace for markdown line breaks)
+[{*.md,AGENTS.md}]
+trim_trailing_whitespace = false
+indent_size = 2

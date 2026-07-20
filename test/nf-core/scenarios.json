@@ -1,0 +1,28 @@
+{
+    "install_pinned_version": {
+        "image": "debian:latest",
+        "features": {
+            "nf-core": {
+                "toolVersion": "3.5.2"
+            }
+        }
+    },
+    "test_fedora": {
+        "image": "fedora:latest",
+        "features": {
+            "nf-core": {}
+        }
+    },
+    "test_opensuse": {
+        "image": "registry.opensuse.org/opensuse/leap:latest",
+        "features": {
+            "nf-core": {}
+        }
+    },
+    "test_archlinux": {
+        "image": "archlinux:latest",
+        "features": {
+            "nf-core": {}
+        }
+    }
+}
