@@ -11,7 +11,7 @@ Feature installs the standalone suite of BLAST+ command-line tools into your dev
 
 ```json
 "features": {
-    "ghcr.io/exterex/features/blast:1": {
+    "ghcr.io/andreassag/features/blast:1": {
         "version": "latest"
     }
 }

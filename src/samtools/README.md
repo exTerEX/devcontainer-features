@@ -11,7 +11,7 @@ Feature compiles and installs the official suite of SAMtools utilities into your
 
 ```json
 "features": {
-    "ghcr.io/exterex/features/samtools:1": {
+    "ghcr.io/andreassag/features/samtools:1": {
         "version": "latest"
     }
 }
