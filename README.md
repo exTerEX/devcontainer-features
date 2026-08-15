@@ -35,13 +35,13 @@ To utilize these features in your project, reference them directly inside your `
     "name": "Bioinformatics Workspace",
     "image": "https://mcr.microsoft.com/devcontainers/base:debian",
     "features": {
-        "ghcr.io/exterex/features/htslib:1": {
+        "ghcr.io/andreassag/features/htslib:1": {
             "version": "latest"
         },
-        "ghcr.io/exterex/features/samtools:1": {
+        "ghcr.io/andreassag/features/samtools:1": {
             "version": "1.24"
         },
-        "ghcr.io/exterex/features/nextflow:1": {
+        "ghcr.io/andreassag/features/nextflow:1": {
             "version": "latest"
         }
     }

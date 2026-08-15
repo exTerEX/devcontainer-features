@@ -11,7 +11,7 @@ Feature compiles and installs the official suite of BCFtools utilities into your
 
 ```json
 "features": {
-    "ghcr.io/exterex/features/bcftools:1": {
+    "ghcr.io/andreassag/features/bcftools:1": {
         "version": "latest"
     }
 }

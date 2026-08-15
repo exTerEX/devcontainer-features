@@ -11,6 +11,6 @@ Installs the official NCBI Datasets CLI utility into your devcontainer images. T
 
 ```json
 "features": {
-    "ghcr.io/exterex/features/datasets-cli:1": {}
+    "ghcr.io/andreassag/features/datasets-cli:1": {}
 }
 ```

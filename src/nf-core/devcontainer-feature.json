@@ -13,6 +13,6 @@
     },
     "customizations": {},
     "installsAfter": [
-        "ghcr.io/exterex/features/nextflow"
+        "ghcr.io/andreassag/features/nextflow"
     ]
 }

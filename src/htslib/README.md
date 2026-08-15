@@ -11,7 +11,7 @@ Feature compiles and installs HTSlib C library and utilities (`bgzip`, `tabix`, 
 
 ```json
 "features": {
-    "ghcr.io/exterex/features/htslib:1": {
+    "ghcr.io/andreassag/features/htslib:1": {
         "version": "latest"
     }
 }

@@ -11,7 +11,7 @@ A feature to install the nf-test framework to allow quick and isolated pipeline 
 
 ```json
 "features": {
-    "ghcr.io/exterex/features/nf-test:1": {}
+    "ghcr.io/andreassag/features/nf-test:1": {}
 }
 ```
 

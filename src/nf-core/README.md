@@ -11,7 +11,7 @@ Installs the official nf-core tools CLI into your devcontainer. This provides a 
 
 ```json
 "features": {
-    "ghcr.io/exterex/features/nf-core:1": {}
+    "ghcr.io/andreassag/features/nf-core:1": {}
 }
 ```
 
